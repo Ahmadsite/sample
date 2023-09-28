@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Mambilla Pure Honey</title>
     <style>
         *{
             padding: 0;
@@ -13,7 +13,7 @@
         .home{
             padding-bottom: 25px;
             margin-top: 55px;
-            
+            width: 100vw;
             
             background: #FFD700;
             display: flex;
@@ -28,20 +28,27 @@
             align-items: center;
             justify-content: space-between;
         }
-        .home .img{
-            width: 50%;
+        .home .img-container{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 120px;
+        }
+        .home .home-img{
+            width: 80%;
             background: #fff;
             border-radius: 50%;
             overflow: hidden;
-            min-height: 40vh;
-            margin-top: 120px;
+            max-height: 80%;
+
         }
         .home img{
             width: 80%;
         }
         header{
             width: 100vw;
-            height: 60px;
+            height: 85px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -59,6 +66,22 @@
             align-items: center;
             justify-content: space-between;
         }
+        .logo{
+            width: 300px;
+            height: 75px;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+        .menu:active{
+            transform: scale(1.3);
+            
+        }
+        .logo img{
+            height: 100%;
+            width: 100%;
+        }
+        
+
         .header p{
             font-weight: 600;
             font-family: serif;
@@ -70,21 +93,33 @@
             border-radius: 40px;
             padding: 0px 5px;
         }
-        .menu a{
-            text-decoration: none;
-            color: #FFD700;
-            background: transparent;
-            border-radius: 30px;
-            padding: 3px 10px;
-            font-weight: bold;
-            -webkit-text-stroke: .5px #FFD700;
-            border: 3px solid #FFD700;
-            letter-spacing: 1px;
-            transition: .7s;
+        .desktop-menu{
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        .menu a:hover{
-            background: #FFD700;
-            color: #fff;
+        .desktop-menu div{
+            margin: 0px 5px;
+        }
+        .desktop-menu div a{
+            text-decoration: none;
+            font-size: 35px;
+            color: #ffd700;
+            font-weight: 600;
+            letter-spacing: 2px;
+            -webkit-text-stroke: 1px #000;
+            transition: .4s;
+        }
+        .desktop-menu div a:hover{
+            font-size: 40px;
+            color: #105410;
+            border-bottom: 4px solid #105410;
+        }
+        .menu{
+            display: none;
+        }
+        .logo-roll{
+            display: none;
         }
         .mambilla{
             color: #000;
@@ -130,7 +165,8 @@
             padding: ;
         }
         .chat-button{
-            width: 200px;
+            min-width: 160px;
+            width: 20vw;
             height: 40px;
             border-radius: 30px;
             background: #fff;
@@ -143,6 +179,10 @@
             box-shadow: 0px 0px 5px #555;
             transition: .4s;
             -webkit-text-stroke: 0.5px #000;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .chat-button:hover{
             background: transparent;
@@ -168,9 +208,23 @@
             background: #FFD700;
             border-radius: 50%;
         }
+        .about{
+            width: 100%;
+            background: rgba(0,0,0,0.7)url('img/about background.jpg');
+            background-blend-mode: darken;
+            
+            
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-idex: -1;*/
+        }
         .about-content{
             padding: 20px 0px;
-            background: #f9f9c9;
+            background: transparent;
+            background-size: cover;
+            overflow: hidden;
+            opacity: ;
             width: 100vw;
             display: flex;
             flex-direction: column;
@@ -178,9 +232,10 @@
             justify-content: center;
         }
         .about-content h2{
-            font-size: 25px;
+            font-size: 7vw;
             font-weight: bold;
             color: #FFD700;
+            position: relative;
             font-family: Sans-Serif;
             -webkit-text-stroke: 1px #000;
             text-align: center;
@@ -189,7 +244,7 @@
         .about-content p{
             width: 90%;
             font-size: 18px;
-            color: #252525;
+            color: #fff;
             font-weight: 350;
             letter-spacing: 1px;
         }
@@ -202,7 +257,7 @@
             justify-content: center;
         }
         .products-showcase .product-title{
-            font-size: 25px;
+            font-size: 7vw;
             font-weight: bold;
             color: #FFD700;
             font-family: Sans-Serif;
@@ -218,7 +273,7 @@
         }
         .products-showcase .img div{
             width: ;
-             flex: 1 0 calc(50% - 10px);
+             flex: 1 0 calc(25% - 10px);
             ;
         }
         .products-showcase .img div img:hover{
@@ -239,6 +294,7 @@
             box-shadow: 0px 0px 10px #000;
             border-radius: 30px;
             overflow: hidden;
+            z-index: 5000;
         }
         .whatsapp-icon img{
             width: 100%;
@@ -250,9 +306,10 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            background: #454100;
         }
         .testimonial-title{
-            font-size: 25px;
+            font-size: 7vw;
             font-weight: bold;
             color: #FFD700;
             font-family: Sans-Serif;
@@ -272,7 +329,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            box-shadow: 0px 0px 5px #252525;
+            box-shadow: 0px 0px 15px #000;
             border-radius: 30px;
             padding: 10px;
             background: #f1f1f1;
@@ -289,6 +346,7 @@
             font-weight: 400;
             font-size: 18px;
             width: 100%;
+            max-width: 350px;
         }
         .location{
             padding: 20px 0px;
@@ -329,10 +387,118 @@
         footer a{
             color: #000;
         }
+        .locaton-address span{
+            width: 20px;
+            height: 20px;
+        }
+        .location-address span img{
+            width: 20px;
+            height: 20px;
+            margin-bottom: -3px;
+        }
+        .location-address .location-img{
+            width: 30px;
+            height: 30px;
+            margin-bottom: -10px;
+        }
         
-        /* -----Desktop View-------*/
+        /* -----Mobile View-------*/
         
         @media only screen and (max-width: 400px){
+                .header{
+                    height: 70px;
+                }
+                .logo{
+                width: 200px;
+                height: 50px;
+                overflow: hidden;
+                border-radius: 5px;
+                }
+                .desktop-menu{
+                    display: none;
+                }
+                .logo-roll{
+                width: 100%;
+                height: 0px;
+                background: #fff;
+                position: fixed;
+                top: 82;
+                left: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                overflow: hidden;
+                transition: .4s;
+                z-index: 4500;
+            }
+            .call{
+                width: 90%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .email-container, .call-container, .whatsapp-container, .sms-container{
+                
+                width: 90%;
+                border-radius: 30px;
+                height: 20px;
+                margin: 5px 0px;
+            }
+            
+            .email-container a, .call-container a, .whatsapp-container a, .sms-container a{
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 18px;
+                color: #ffd700;
+                font-family: fantasy;
+                transition: .4s;
+                -webkit-text-stroke: 1px #000;
+                letter-spacing: 2px;
+            }
+            .logo-roll div a:hover{
+                margin-left: 20px;/*
+                background: #ffd700;
+                color: #fff;*/
+                font-size: 25px;
+                color: #105710;
+            }
+            /*
+            .logo-roll div:hover{
+                background: #ffd700;
+                color: #fff;
+                
+            }
+            */
+            .menu{
+                display: block;
+                width: 50px;
+                height: 50px;
+                transition: .5s;
+            }
+            .menu img{
+                width: 100%;
+                height: 100%;
+                
+            }
+            .menu a{
+                text-decoration: none;
+                color: #FFD700;
+                background: transparent;
+                border-radius: 30px;
+                padding: 3px 10px;
+                font-weight: bold;
+                -webkit-text-stroke: .5px #FFD700;
+                border: 3px solid #FFD700;
+                letter-spacing: 1px;
+                transition: .7s;
+            }
+            .menu a:hover{
+                background: #FFD700;
+                color: #fff;
+            }
+            
             .home{
                 
                 margin-top: 55px;
@@ -389,16 +555,25 @@
                 text-shadow: 1px 2px 4px #000;
     
             }
+            .home .img-container{
+                width: 95%;
+                min-height: 40vw;
+                margin: 20px 0px;
+            }
             .home .img{
-                width: 90%;
+                width: 100%;
                 background: #fff;
                 border-radius: 50%;
                 overflow: hidden;
-                min-height: 40vh;
-                margin: 20px 0px;
+                max-height: 100%;
+                
             }
             
-            
+            .products-showcase .img div{
+                width: ;
+                flex: 1 0 calc(50% - 10px);
+                ;
+            }
             
         }
         
@@ -409,12 +584,43 @@
     <header>
         <div class="header">
             <div class="logo">
-                <p><span class="mambilla">Mambilla</span><span class="pure">Pure</span>Honey</p>
+               <img src="img/logo.jpg" alt="">
             </div>
-            <div class="menu"><a href="tel: 09065293293">Call</a></div>
+            <div class="menu">
+                <!---------
+                <a href="tel: 09065293293">Call</a>
+                -------------->
+                <img src="img/menu.jpg" alt="">
+            </div>
+            <div class="desktop-menu">
+                <div class="desktop-whatsapp">
+                    <a href="https://wa.me:09065293293">WhatsApp</a>
+                </div>
+                <div class="desktop-email"><a href="mailto:admin@ahmadusman.site">Email</a>
+                </div>
+            </div>
         </div>
     </header>
     <div class="home">
+        <div class="logo-roll">
+            <div class="call">
+                <div class="call-container">
+                    <a href="tel:09065293293">Call</a>
+                </div>
+                <div class="whatsapp-container">
+                    <a href="https://api/whatsapp.com?send/phone=2349065293293&text=%20Hello%2chow%20you%20doing">WhatsApp</a>
+                </div>
+                <div class="sms-container">
+                    <a href="sms:09065293293?&body=Hello, tell me more about you">SMS</a>
+                </div>
+              
+                <div class="email-container">
+                    <a href="mailto:admin@ahmadusman.site">Email</a>
+                </div>
+
+                
+            </div>
+        </div>
         <div class="home-container">
             <div class="names">
                 <h1>Mambilla<p>Pure Honey</p></h1>
@@ -425,20 +631,25 @@
                
     
             </div>
-    
-            <div class="img">
-                <img src="img/home.png">
+            <div class="img-container">
+                <div class="home-img">
+                    <img src="img/home.png">
+                </div>
             </div>
+
         </div>
 
         
         <div class="chat-button-container">
-            <button class="chat-button">Let's Chat</button>
+            <a class="chat-button" href="https://api.whatsapp.com/send?phone=2349065293293&text=Hello%2c%20I%20am%20interested%20in%20your%20services%20and%20I%20will%20like%20to%20order%20some%20honey.%20Are%20you%20there?">
+                Let's Chat
+            </a>
+            
         </div>
        
     </div>
     <div class="whatsapp-icon">
-        <a href="https://api.whatsapp.com/send?phone=2349065293293&text=Hello%,%I%need%honey.%Are%you%there">
+        <a href="https://api.whatsapp.com/send?phone=2349065293293&text=Hello%2c%20I%20am%20interested%20in%20your%20services%20and%20I%20will%20like%20to%20order%20some%20honey.%20Are%20you%20there?">
             <img src="img/whatsapp.png" alt="">
         </a>
         
@@ -488,14 +699,14 @@
         </div>
     </div>
     <section class="about">
-  <div class="about-content">
-    <h2>About Mambilla Pure Honey</h2>
-    <p>Discover the essence of nature's sweetness at mambilla Pure Honey. From the heart of Taraba State, Nigeria, we bring you pure, exquisite honey harvested from mambilla's vibrant wildflowers. Experience the authentic flavors of our region, delivered to homes across Nigeria.</p>
-    <br>
-    <p>Rooted in nature, driven by passion, mambilla Pure Honey is a celebration of the land and its treasures. With every jar, you're tasting the beauty of Taraba State's landscapes.</p>
-    <br>
-    <p>Taste the difference, embrace the natural goodness, and let mambilla Pure Honey transport you to the heart of our beloved landscapes.</p>
-  </div>
+      <div class="about-content">
+        <h2>About Mambilla Pure Honey</h2>
+        <p>Discover the essence of nature's sweetness at mambilla Pure Honey. From the heart of Taraba State, Nigeria, we bring you pure, exquisite honey harvested from mambilla's vibrant wildflowers. Experience the authentic flavors of our region, delivered to homes across Nigeria.</p>
+        <br>
+        <p>Rooted in nature, driven by passion, mambilla Pure Honey is a celebration of the land and its treasures. With every jar, you're tasting the beauty of Taraba State's landscapes.</p>
+        <br>
+        <p>Taste the difference, embrace the natural goodness, and let mambilla Pure Honey transport you to the heart of our beloved landscapes.</p>
+      </div>
 </section>
 <div class="testimonials">
     <div class="testimonial-title">Testimonies</div>
@@ -529,18 +740,30 @@
 <div class="location">
     <div class="location-title">Address</div>
     <div class="location-address">
-        <div class="country">Taraba State, Nigeria</div>
-        <div class="phone">
-            +234 9065 293 293
+        <div class="country"><span><img src="img/location.png" alt="" class="location-img"></span> Taraba State, Nigeria</div>
+        <div class="phone"><span><img src="img/phone.png" alt=""> </span>
+             +234 9065 293 293
         </div>
-        <div class="email">
-            admin@ahmadusman.site
+        <div class="email"><span><img src="img/email.png" alt=""> </span>
+             admin@ahmadusman.site
         </div>
     </div>
 
 </div>
 <footer>
-    ©2023. Deveoped by <a href="www.ahmadusman.site">Ahmad Usman</a>
+    ©2023. Deveoped by <a href="https://ahmadusman.site">Ahmad Usman</a>
 </footer>
+<script>
+    const menu = document.querySelector('.menu')
+    const menuField = document.querySelector('.logo-roll')
+    menu.addEventListener("click", function(){
+        if (menuField.style.height === 140 + "px"){
+            menuField.style.height = 0 +"px"
+        }
+        else{
+            menuField.style.height = 140 + "px"
+        }
+    })
+</script>
 </body>
 </html>
